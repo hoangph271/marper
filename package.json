@@ -1,0 +1,19 @@
+{
+  "name": "marper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Phan Huy Hoang <hoangph271@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.mjs"
+  },
+  "dependencies": {
+    "@marp-team/marp-core": "^2.3.2",
+    "express": "^4.17.3",
+    "multer": "^1.4.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.15"
+  }
+}
