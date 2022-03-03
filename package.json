@@ -5,7 +5,9 @@
   "author": "Phan Huy Hoang <hoangph271@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.mjs"
+    "start": "nodemon index.mjs",
+    "predeplay": "yarn",
+    "deploy": "node index.mjs"
   },
   "dependencies": {
     "@marp-team/marp-core": "^2.3.2",
