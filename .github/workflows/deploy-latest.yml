@@ -19,4 +19,4 @@ jobs:
             username: ${{ secrets.USERNAME }}
             KEY: ${{ secrets.KEY }}
             port: ${{ secrets.PORT }}
-            script: export PORT=${{ secrets.APP_PORT }} && cd /home/algo/marper && pm2 restart marper
+            script: export PORT=${{ secrets.APP_PORT }} && cd /home/algo/marper && git pull && yarn && pm2 restart marper
