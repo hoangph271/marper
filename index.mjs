@@ -20,6 +20,13 @@ app.post('*', _multer.none(), (req, res) => {
   const marp = new Marp()
   const { html, css } = marp.render(markdown)
 
+  if (req.query.raw) {
+    return res.send({
+      html,
+      css
+    })
+  }
+
   res.send(`
     <!DOCTYPE html>
       <html lang="en">
