@@ -1,6 +1,7 @@
 import { Marp } from '@marp-team/marp-core'
 import Express from 'express'
 import multer from 'multer'
+import tasklist from 'markdown-it-task-lists'
 
 /**
  * @type {Express.Application}
@@ -17,7 +18,9 @@ app.post('*', _multer.none(), (req, res) => {
     return res.redirect('/')
   }
 
-  const marp = new Marp()
+  const marp = new Marp({ html: true })
+    .use(tasklist)
+
   const { html, css } = marp.render(markdown)
 
   if (req.query.json) {

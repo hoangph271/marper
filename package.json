@@ -12,6 +12,7 @@
   "dependencies": {
     "@marp-team/marp-core": "^2.3.2",
     "express": "^4.17.3",
+    "markdown-it-task-lists": "^2.1.1",
     "multer": "^1.4.4"
   },
   "devDependencies": {
